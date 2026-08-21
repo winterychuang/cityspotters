@@ -14,24 +14,26 @@ app.get("/map", (req, res) =>{
 })
 
 app.get("/recommendations", (req, res) =>{
-    res.send("rec page 1");
+    res.render("recommendations");
 })
 
-//app.get("/recommendations/results", (req, res) =>{
-//    res.send("rec page 2");
+app.get("/recommendations/results", (req, res) =>{
+    res.send("rec page 2");
+
+
+//shelf for now until we figure out specific routing 
+//for unique pages (since there will be multiple)
+//app.get("/information/:place", (req, res) =>{
+//    res.render("info");
 //})
 
-app.get("/information/:place", (req, res) =>{
-    res.send("info page");
-})
-
 app.get("/settings", (req, res) =>{
-    res.send("settings page");
+    res.render("settings");
 })
 
 app.get("/profile", (req, res) =>{
-    res.send("prof page");
+    res.render("profile");
 })
 
 app.listen(PORT, () => 
-console.log("Server is running on port", PORT))
+console.log("Server is running on port", PORT))})
