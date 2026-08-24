@@ -8,7 +8,7 @@ app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs")
 
 app.get("/", (req,res) => {
-    res.render("homepg");
+    res.render("homepage");
 })
 
 app.get("/map", (req, res) =>{
