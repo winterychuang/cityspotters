@@ -1,5 +1,6 @@
 <!DOCTYPE html>
     <head>
+        <link rel=""stylesheet" href="/css/map.css"%>
         <title>Map</title>
     </head>
 
@@ -7,15 +8,31 @@
         <header> 
             <h1> Map </h1>
             <%# this below (the navigation section) will be our header thing %>
-            <nav>
-                <a href = "/"> Home </a>
-                <a href = "/map"> Map </a>
-                <a href = "/profile"> Profile </a> 
-                <a href = "/settings"> Settings </a>
-            </nav>
-        </header>
-        <h1>lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum \nlorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum \nlorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum \nlorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum \n</h1>
-        <a href = "/map">Map</a> 
+            <%- include('./components/header') %>
+        </header> 
+
+        <button type = "button"><a href="/reccomendations">Reccomendations</a></button>
+    
+
+        <div>
+            <h2>Filters</h2>
+            <div>
+                <input type="checkbox" id="c1" name="Food & Drinks">
+                <label for="c1"> Food & Drinks</label>
+            </div>
+            <div>
+                <input type="checkbox" id="c2" name="Public Spaces">
+                <label for="c2">Public Spaces</label>
+            </div>
+            <div>
+                <input type="checkbox" id="c3" name="Storefronts">
+                <label for="c3">Storefronts</label>
+            </div>
+            <div>
+                <input type="checkbox" id="c4" name="Other">
+                <label for="c4">Other</label>
+            </div>
+        </div>
 
     </body>
 </html>

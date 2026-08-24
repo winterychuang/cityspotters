@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<%#find a way to put in/format the user specific info and also make it so you have to be logged in to access %>
+<html>
+<!-- <%#find a way to put in/format the user specific info and also make it so you have to be logged in to access %> -->
     <head>
+        <link rel=""stylesheet" href="/css/profile.css"%>
         <title> Profile </title>
     </head>
     <body>
         <header> 
             <h1> Profile </h1>
-            <nav>
-                <a href = "/"> Home </a>
-                <a href = "/map"> Map </a>
-                <a href = "/profile"> Profile </a> 
-                <a href = "/settings"> Settings </a>   
-            </nav>
         </header>
-        
+        <%- include('./components/header') %>
     </body>
 </html>
