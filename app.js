@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const PORT = 3000;
 
+app.use(express.static(__dirname + "/public"));
+
 
 app.set("view engine", "ejs")
 
@@ -30,8 +32,9 @@ app.get("/settings", (req, res) =>{
 })
 
 app.get("/profile", (req, res) =>{
-    res.send("prof page");
+    res.render("profile");
 })
+
 
 app.listen(PORT, () => 
 console.log("Server is running on port", PORT))
