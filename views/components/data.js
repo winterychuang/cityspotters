@@ -1,4 +1,4 @@
-const foodndrink = {
+const locations = {
     ex1restaurant: {
         name: "Example",
         address: "xyz",
@@ -23,7 +23,6 @@ const foodndrink = {
         picture: 0,
         
     },
-
 
 
     tokyocream: {
@@ -99,9 +98,6 @@ const foodndrink = {
 
     },
 
-    
-}
-const publicareas = {
 
     deadmanspoint: {
         name: "Deadman's Point",
@@ -175,37 +171,31 @@ const publicareas = {
         picture: 0,
 
     },
-
-    
-}
-
-const storefronts = {
-
-    kirashop: {
-        name: "Deadman's Point",
-        address: "1114-1142 El Camino Del Mar, San Francisco, CA 94121",
+kirashop: {
+        name: "The Kira Shop",
+        address: "1234 9th Ave, San Francisco, CA 94122",
         //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
             //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
         //or
         time: {
-            M: "Figure this out somehow",
-            Tu: "11:30AM-10:00PM",
-            W:  "11:30AM-10:00PM",
-            Th: "11:30AM-10:00PM",
-            F: "11:30AM-10:00PM",
-            Sa: "11:00AM-10:00PM",
-            Su: "11:00AM-10P:00M"
+            M: "11:00AM-7:00PM",
+            Tu: "11:00AM-7:00PM",
+            W:  "11:00AM-7:00PM",
+            Th: "11:00AM-7:00PM",
+            F: "10:00AM-7:00PM",
+            Sa: "10:00AM-7:00PM",
+            Su: "10:00AM-6:00PM"
         },
         //level on scale of 1-2-3-4-5 (higher # = more expensive)
         price: 0,
-        desc: "Senic and relatively serene trail in Land's End, ocean views and lush nature",
+        desc: "Eclectic Miffy-themed shop with plenty of cute and whimsical trinkets",
         //figure out links
-        link: "https://sfrecpark.org",
+        link: "https://thekirashop.com",
         //store picture
         picture: 0,
 
     },
-   balboapark: {
+   balbopark: {
         name: "Balboa Park",
         address: "San Francisco, CA 94112",
         //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
@@ -229,7 +219,7 @@ const storefronts = {
         picture: 0,
 
     },
-    larsenpeak: {
+    larsenpek: {
         name: "Larsen Peak",
         address: "1705 14th Ave, San Francisco, CA 94122",
         //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
@@ -253,9 +243,9 @@ const storefronts = {
         picture: 0,
 
     },
-
+    
     
 }
 
 
-module.exports = {foodndrink, publicareas, storefronts};
+module.exports = {locations};

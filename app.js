@@ -2,12 +2,13 @@ const express = require("express");
 const app = express();
 const PORT = 3000;
 
+
 app.use(express.static(__dirname + "/public"));
 
 
 app.set("view engine", "ejs")
 
-const d1 = require("./views/components/data.js")
+const infosrc = require("./views/components/data.js")
 
 app.get("/", (req,res) => {
     res.render("homepage");
@@ -26,7 +27,7 @@ app.get("/recommendations", (req, res) =>{
 //})
 
 app.get("/information/:place", (req, res) =>{
-    res.render("information", {data: d1[req.params.place]});
+    res.render("information", {data: infosrc.locations[req.params.place]});
 })
 
 app.get("/settings", (req, res) =>{
@@ -38,5 +39,8 @@ app.get("/profile", (req, res) =>{
 })
 
 
-app.listen(PORT, () => 
-console.log("Server is running on port", PORT))
+app.listen(PORT, () => {
+    console.log("Server is running on port", PORT)
+    console.log(infosrc)
+}
+)
