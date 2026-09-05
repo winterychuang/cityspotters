@@ -7,6 +7,8 @@ app.use(express.static(__dirname + "/public"));
 
 app.set("view engine", "ejs")
 
+const d1 = require("./views/components/data.js")
+
 app.get("/", (req,res) => {
     res.render("homepage");
 })
@@ -24,7 +26,7 @@ app.get("/recommendations", (req, res) =>{
 //})
 
 app.get("/information/:place", (req, res) =>{
-    res.send("info page");
+    res.render("information", {data: d1[req.params.place]});
 })
 
 app.get("/settings", (req, res) =>{
