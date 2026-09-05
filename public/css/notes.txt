@@ -1,0 +1,24 @@
+hex codes 
+    - main: 588BE6
+    - background: FFFFFF
+    - text: 0D0B0B
+    - accent 1: FEF8E5
+    - accent 2: 96A8C8
+
+fonts
+    - Merge One
+    - Afacad font
+    - we might have to download the libaries for these ones
+
+textures & images
+    - we could probably mix screentones and grids b/c the screentone lokos good right now but i'd also like to see how the grid looks
+    - might need to make these ourselves b/c they need to be higher quality 
+    - need a higher quality image of the logo (please export it as a png and not a pdf file)
+    - images for locations 
+    - i (rebecca) probably need to start drawing some of the graphics but need direction 
+
+- install map library and get it working 
+- rounded corners w/ radius of 29 (could also be lower but again idk)
+- getting dark overlay to work whenever there is a popup/input prompt (those could also be in the components folder?)
+
+
