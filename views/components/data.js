@@ -1,18 +1,21 @@
+const { Fragment } = require("react/jsx-runtime");
+
 const locations = {
     ex1restaurant: {
         name: "Example",
         address: "xyz",
+        type: "Food and Drink",
         //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
             //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
         //or
         time: {
-            M: "9:00-6:00",
-            Tu: "9:00-6:00",
-            W:  "9:00-6:00",
-            Th: "9:00-6:00",
-            F: "9:00-6:00",
-            Sa: "9:00-6:00",
-            Su: "9:00-6:00"
+            Monday: "9:00-6:00",
+            Tuesday: "9:00-6:00",
+            Wednesday:  "9:00-6:00",
+            Thursday: "9:00-6:00",
+            Friday: "9:00-6:00",
+            Saturday: "9:00-6:00",
+            Sunday: "9:00-6:00"
         },
         //level on scale of 1-2-3-4-5 (higher # = more expensive)
         price: 2,
@@ -27,18 +30,19 @@ const locations = {
 
     tokyocream: {
         name: "Tokyo Cream",
+        type: "Food and Drink",
         address: "1838 Irving St, San Francisco, CA 94122",
         //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
             //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
         //or
         time: {
-            M: "11:30AM-10:00PM",
-            Tu: "11:30AM-10:00PM",
-            W:  "11:30AM-10:00PM",
-            Th: "11:30AM-10:00PM",
-            F: "11:30AM-10:00PM",
-            Sa: "11:00AM-10:00PM",
-            Su: "11:00AM-10P:00M"
+            Monday: "11:30AM-10:00PM",
+            Tuesday: "11:30AM-10:00PM",
+            Wednesday:  "11:30AM-10:00PM",
+            Thursday: "11:30AM-10:00PM",
+            Friday: "11:30AM-10:00PM",
+            Saturday: "11:00AM-10:00PM",
+            Sunday: "11:00AM-10P:00M"
         },
         //level on scale of 1-2-3-4-5 (higher # = more expensive)
         price: 3,
@@ -51,18 +55,19 @@ const locations = {
     },
    lapromenade: {
         name: "La Promenade Cafe",
+        type: "Food and Drink",
         address: "3643 Balboa St, San Francisco, CA 94121",
         //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
             //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
         //or
         time: {
-            M: "7:00AM-6:00PM",
-            Tu: "7:00AM-6:00PM",
-            W:  "7:00AM-6:00PM",
-            Th: "7:00AM-8:00PM",
-            F: "7:00AM-8:00PM",
-            Sa: "8:00AM-8:00PM",
-            Su: "8:00AM-6:00PM"
+            Monday: "7:00AM-6:00PM",
+            Tuesday: "7:00AM-6:00PM",
+            Wednesday:  "7:00AM-6:00PM",
+            Thursday: "7:00AM-8:00PM",
+            Friday: "7:00AM-8:00PM",
+            Saturday: "8:00AM-8:00PM",
+            Sunday: "8:00AM-6:00PM"
         },
         //level on scale of 1-2-3-4-5(higher # = more expensive)
         price: 2,
@@ -75,18 +80,19 @@ const locations = {
     },
     hookfish: {
         name: "Hook Fish Co",
+        type: "Food and Drink",
         address: "4542 Irving St, San Francisco, CA 94122",
         //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
             //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
         //or
         time: {
-            M: "11:00AM-9:00PM",
-            Tu: "11:00AM-9:00PM",
-            W:  "11:00AM-9:00PM",
-            Th: "11:00AM-9:00PM",
-            F: "11:00AM-9:00PM",
-            Sa: "11:00AM-9:00PM",
-            Su: "11:00AM-9:00PM"
+            Monday: "11:00AM-9:00PM",
+            Tuesday: "11:00AM-9:00PM",
+            Wednesday:  "11:00AM-9:00PM",
+            Thursday: "11:00AM-9:00PM",
+            Friday: "11:00AM-9:00PM",
+            Saturday: "11:00AM-9:00PM",
+            Sunday: "11:00AM-9:00PM"
         },
         //level on scale of 1-2-3-4-5 (higher # = more expensive)
         price: 4,
@@ -101,18 +107,19 @@ const locations = {
 
     deadmanspoint: {
         name: "Deadman's Point",
+        type: "Public Spaces",
         address: "1114-1142 El Camino Del Mar, San Francisco, CA 94121",
         //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
             //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
         //or
         time: {
-            M: "Figure this out somehow",
-            Tu: "11:30AM-10:00PM",
-            W:  "11:30AM-10:00PM",
-            Th: "11:30AM-10:00PM",
-            F: "11:30AM-10:00PM",
-            Sa: "11:00AM-10:00PM",
-            Su: "11:00AM-10P:00M"
+            Monday: "Figure this out somehow",
+            Tuesday: "11:30AM-10:00PM",
+            Wednesday:  "11:30AM-10:00PM",
+            Thursday: "11:30AM-10:00PM",
+            Friday: "11:30AM-10:00PM",
+            Saturday: "11:00AM-10:00PM",
+            Sunday: "11:00AM-10P:00M"
         },
         //level on scale of 1-2-3-4-5 (higher # = more expensive)
         price: 0,
@@ -125,18 +132,19 @@ const locations = {
     },
    balboapark: {
         name: "Balboa Park",
+        type: "Public Spaces",
         address: "San Francisco, CA 94112",
         //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
             //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
         //or
         time: {
-            M: "5:00AM-12:00AM",
-            Tu: "5:00AM-12:00AM",
-            W:  "5:00AM-12:00AM",
-            Th: "5:00AM-12:00AM",
-            F: "5:00AM-12:00AM",
-            Sa: "5:00AM-12:00AM",
-            Su: "5:00AM-12:00AM"
+            Monday: "5:00AM-12:00AM",
+            Tuesday: "5:00AM-12:00AM",
+            Wednesday:  "5:00AM-12:00AM",
+            Thursday: "5:00AM-12:00AM",
+            Friday: "5:00AM-12:00AM",
+            Saturday: "5:00AM-12:00AM",
+            Sunday: "5:00AM-12:00AM"
         },
         //level on scale of 1-2-3-4-5(higher # = more expensive)
         price: 0,
@@ -149,21 +157,22 @@ const locations = {
     },
     larsenpeak: {
         name: "Larsen Peak",
+        type: "Public Spaces",
         address: "1705 14th Ave, San Francisco, CA 94122",
         //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
             //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
         //or
         time: {
-            M: "Open 24 hours",
-            Tu: "Open 24 hours",
-            W:  "Open 24 hours",
-            Th: "Open 24 hours",
-            F: "Open 24 hours",
-            Sa: "Open 24 hours",
-            Su: "Open 24 hours"
+            Monday: "Open 24 hours",
+            Tuesday: "Open 24 hours",
+            Wednesday:  "Open 24 hours",
+            Thursday: "Open 24 hours",
+            Friday: "Open 24 hours",
+            Saturday: "Open 24 hours",
+            Sunday: "Open 24 hours"
         },
         //level on scale of 1-2-3-4-5 (higher # = more expensive)
-        price: 4,
+        price: 0,
         desc: "Local park with cute dogs and views of Sutro Tower and the city from up high",
         //figure out links
         link: "https://sfrecpark.org",
@@ -173,21 +182,22 @@ const locations = {
     },
 kirashop: {
         name: "The Kira Shop",
+        type: "Storefronts",
         address: "1234 9th Ave, San Francisco, CA 94122",
         //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
             //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
         //or
         time: {
-            M: "11:00AM-7:00PM",
-            Tu: "11:00AM-7:00PM",
-            W:  "11:00AM-7:00PM",
-            Th: "11:00AM-7:00PM",
-            F: "10:00AM-7:00PM",
-            Sa: "10:00AM-7:00PM",
-            Su: "10:00AM-6:00PM"
+            Monday: "11:00AM-7:00PM",
+            Tuesday: "11:00AM-7:00PM",
+            Wednesday:  "11:00AM-7:00PM",
+            Thursday: "11:00AM-7:00PM",
+            Friday: "10:00AM-7:00PM",
+            Saturday: "10:00AM-7:00PM",
+            Sunday: "10:00AM-6:00PM"
         },
         //level on scale of 1-2-3-4-5 (higher # = more expensive)
-        price: 0,
+        price: 4,
         desc: "Eclectic Miffy-themed shop with plenty of cute and whimsical trinkets",
         //figure out links
         link: "https://thekirashop.com",
@@ -195,50 +205,52 @@ kirashop: {
         picture: 0,
 
     },
-   balbopark: {
-        name: "Balboa Park",
-        address: "San Francisco, CA 94112",
+   greenapplebookstore: {
+        name: "Green Apple Bookstore",
+        type: "Storefronts",
+        address: "1231 9th Ave, San Francisco, CA 94122",
         //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
             //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
         //or
         time: {
-            M: "5:00AM-12:00AM",
-            Tu: "5:00AM-12:00AM",
-            W:  "5:00AM-12:00AM",
-            Th: "5:00AM-12:00AM",
-            F: "5:00AM-12:00AM",
-            Sa: "5:00AM-12:00AM",
-            Su: "5:00AM-12:00AM"
+            Monday: "10:00AM-9:00PM",
+            Tuesday: "10:00AM-9:00PM",
+            Wednesday:  "10:00AM-9:00PM",
+            Thursday: "10:00AM-9:00PM",
+            Friday: "10:00AM-9:00PM",
+            Saturday: "10:00AM-9:00PM",
+            Sunday: "10:00AM-9:00PM"
         },
         //level on scale of 1-2-3-4-5(higher # = more expensive)
-        price: 0,
-        desc: "Park with a variety of sporting areas, playgrounds, and a skate park.",
+        price: 3,
+        desc: "Eclectic and curated bookstore around the local neighborhood popular with SF natives.",
         //figure out links
-        link: "https://sfrecpark.org",
+        link: "http://greenapplebooks.com/",
         //store picture
         picture: 0,
 
     },
-    larsenpek: {
-        name: "Larsen Peak",
-        address: "1705 14th Ave, San Francisco, CA 94122",
+    mountsutroosr: {
+        name: "Mount Sutro Open Space Reserve",
+        type: "Public Spaces",
+        address: "San Francisco, CA 94131",
         //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
             //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
         //or
         time: {
-            M: "Open 24 hours",
-            Tu: "Open 24 hours",
-            W:  "Open 24 hours",
-            Th: "Open 24 hours",
-            F: "Open 24 hours",
-            Sa: "Open 24 hours",
-            Su: "Open 24 hours"
+            Monday: "Open 24 hours",
+            Tuesday: "Open 24 hours",
+            Wednesday:  "Open 24 hours",
+            Thursday: "Open 24 hours",
+            Friday: "Open 24 hours",
+            Saturday: "Open 24 hours",
+            Sunday: "Open 24 hours"
         },
         //level on scale of 1-2-3-4-5 (higher # = more expensive)
-        price: 4,
-        desc: "Local park with cute dogs and views of Sutro Tower and the city from up high",
+        price: 0,
+        desc: "",
         //figure out links
-        link: "https://sfrecpark.org",
+        link: "http://www.ucsf.edu/about/cgr/current-projects/mount-sutro-open-space-reserve",
         //store picture
         picture: 0,
 
