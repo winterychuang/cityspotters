@@ -23,7 +23,7 @@ const locations = {
         //figure out links
         link: "youtube.com",
         //store picture
-        picture: 0,
+        picture: "images/infopage-placeholder.jpeg",
         
     },
 
@@ -50,7 +50,7 @@ const locations = {
         //figure out links
         link: "https://www.tokyocreamusa.com",
         //store picture
-        picture: 0,
+        picture: "images/infopage-placeholder.jpeg",
 
     },
    lapromenade: {
@@ -75,7 +75,7 @@ const locations = {
         //figure out links
         link: "https://www.lapromenadecafe.com",
         //store picture
-        picture: 0,
+        picture: "images/infopage-placeholder.jpeg",
 
     },
     hookfish: {
@@ -100,7 +100,7 @@ const locations = {
         //figure out links
         link: "http://hookfishco.com/",
         //store picture
-        picture: 0,
+        picture: "images/infopage-placeholder.jpeg",
 
     },
 
@@ -127,7 +127,7 @@ const locations = {
         //figure out links
         link: "https://sfrecpark.org",
         //store picture
-        picture: 0,
+        picture: "images/infopage-placeholder.jpeg",
 
     },
    balboapark: {
@@ -152,7 +152,7 @@ const locations = {
         //figure out links
         link: "https://sfrecpark.org",
         //store picture
-        picture: 0,
+        picture: "images/infopage-placeholder.jpeg",
 
     },
     larsenpeak: {
@@ -177,7 +177,7 @@ const locations = {
         //figure out links
         link: "https://sfrecpark.org",
         //store picture
-        picture: 0,
+        picture: "images/infopage-placeholder.jpeg",
 
     },
 kirashop: {
@@ -202,7 +202,7 @@ kirashop: {
         //figure out links
         link: "https://thekirashop.com",
         //store picture
-        picture: 0,
+        picture: "images/infopage-placeholder.jpeg",
 
     },
    greenapplebookstore: {
@@ -227,7 +227,7 @@ kirashop: {
         //figure out links
         link: "http://greenapplebooks.com/",
         //store picture
-        picture: 0,
+        picture: "images/infopage-placeholder.jpeg",
 
     },
     mountsutroosr: {
@@ -252,7 +252,7 @@ kirashop: {
         //figure out links
         link: "http://www.ucsf.edu/about/cgr/current-projects/mount-sutro-open-space-reserve",
         //store picture
-        picture: 0,
+        picture: "images/infopage-placeholder.jpeg",
 
     },
     
