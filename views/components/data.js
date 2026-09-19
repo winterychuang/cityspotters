@@ -1,5 +1,3 @@
-const { Fragment } = require("react/jsx-runtime");
-
 const locations = {
     ex1restaurant: {
         name: "Example",

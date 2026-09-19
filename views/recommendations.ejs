@@ -9,6 +9,20 @@
             <%- include('./components/header') %>
         </header>
        
+<% let locationstr = Object.keys(data) %>
+<% console.log(locationstr) %>
+
+    <% for(let i = 0; i < 4;i++){ %>
+        <% let randomizeno = parseInt(Math.random()*locationstr.length)+1 %>
+        <div>
+            <p> <%= data[locationstr[randomizeno]]["name"] %> </p> 
+            <img src = <%= data[locationstr[randomizeno]]["picture"] %> > 
+            <a href = /map> Go to Info Page-- still needs working on </a>
+        </div>
+       
+    <% } %>
+
         <%- include('./components/filters') %>
     </body>
 </html>
+
