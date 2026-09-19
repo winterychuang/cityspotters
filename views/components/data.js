@@ -17,11 +17,24 @@ const locations = {
         },
         //level on scale of 1-2-3-4-5 (higher # = more expensive)
         price: 2,
-        desc: "hello world",
+        desc: "hello world!",
         //figure out links
         link: "youtube.com",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: 0,
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        }
         
     },
 
@@ -98,7 +111,8 @@ const locations = {
         //figure out links
         link: "http://hookfishco.com/",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: 0,
+
 
     },
 

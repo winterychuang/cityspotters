@@ -8,7 +8,7 @@ app.use(express.static(__dirname + "/public"));
 
 app.set("view engine", "ejs")
 
-
+//const commentsrc = require(".views/components/comments.js");
 
 app.get("/", (req,res) => {
     res.render("homepage");
@@ -19,7 +19,9 @@ app.get("/map", (req, res) =>{
 })
 
 app.get("/recommendations", (req, res) =>{
-    res.render("recommendations",{data: infosrc.locations});
+    // find 4 random non repeating places
+    let places = []
+    res.render("recommendations",{data: infosrc.locations, rec: places});
 })
 
 //app.get("/recommendations/results", (req, res) =>{
