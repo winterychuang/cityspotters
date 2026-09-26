@@ -39,4 +39,6 @@ p{
     padding:15px;
     border-radius:20px;
     border: 0px;
+    width: 100vw;
+    height: 100vw; 
 }

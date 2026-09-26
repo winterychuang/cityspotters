@@ -1,0 +1,8 @@
+soo in order to not have to import the font files for every single html file
+we might want to create a global css file so we can just have one big font 
+file and access it right then and there. but! at the same time it might be 
+helpful to have diff files so we can cutomize easier.
+
+but anyways:
+if we dont have one it won't be that massive of a problem as we can just copy
+and paste LOLOLOl 

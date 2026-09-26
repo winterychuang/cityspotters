@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/information.css">
+        <link rel="stylesheet" href="/css/macrecpopup-comp.css">
+    </head>
+    <body>
+        
+        <header> 
+            <%- include('./components/header') %>
+            <h1> <%= data.name %> </h1>
+            <h4> <%= data.address %> </h4>
+            
+            BUTTON onclick -- make component site
+                <button type="button" > Site </button> 
+        </header>
+        <img src = <%= "../" + data.picture %> > 
+        <p>
+            <%- include('./components/descbox') %>
+        </p>
+
+        <h6>
+            <%- include('./components/timetable') %>
+        </h6>
+        
+    </body>
+</html>

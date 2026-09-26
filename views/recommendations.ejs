@@ -1,7 +1,6 @@
 <!DOCTYPE html>
     <head>
         <link rel=""stylesheet" href="/css/recommendations.css"%>
-        <title> Recommendations </title>
     </head>
     <body>
         <header> 
@@ -9,6 +8,25 @@
             <%- include('./components/header') %>
         </header>
        
-        <%- include('./components/filters') %>
+    <div>  
+        <h3> Recommendation of the Day: </h3>
+        <% for(let i = 0; i < 1;i++){ %>
+                <% let randomizeno = parseInt(Math.random()*lockeys.length) %>
+                <%if(usednums.includes(randomizeno) == false){ %>
+                    <div>
+                        <p> <%= data[lockeys[randomizeno]]["name"] %> </p> 
+                        <img src = <%= data[lockeys[randomizeno]]["picture"] %> > 
+                        <a href = /map> Go to Info Page-- still needs working on </a>
+                    </div>
+                <% } %>
+                
+                <% usednums.push(randomizeno) %>
+            
+            <% } %>
+    </div>
+    <h3> Randomized Recs </h3>
+    <input id= "randomgenvalue" type = "text"/>
+    <button type = "button"> Surprise me! </button> 
     </body>
 </html>
+
