@@ -15,13 +15,22 @@ app.get("/", (req,res) => {
 })
 
 app.get("/map", (req, res) =>{
-    res.render("map");
+    let locationstr = Object.keys(infosrc.locations);
+    res.render("map", {
+        data: infosrc.locations, 
+        lockeys:locationstr, 
+        usednums: []
+    });
 })
 
 app.get("/recommendations", (req, res) =>{
     // find 4 random non repeating places
-    let places = []
-    res.render("recommendations",{data: infosrc.locations, rec: places});
+    let locationstr = Object.keys(infosrc.locations);
+    res.render("recommendations",{
+        data: infosrc.locations, 
+        lockeys:locationstr, 
+        usednums: []
+    });
 })
 
 //app.get("/recommendations/results", (req, res) =>{
@@ -43,6 +52,5 @@ app.get("/profile", (req, res) =>{
 
 app.listen(PORT, () => {
     console.log("Server is running on port", PORT)
-    console.log(Object.keys(infosrc.locations))
 }
 )

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-        <title> Information </title>
+    <head>
+        <link rel="stylesheet" href="/css/information.css">
+        <link rel="stylesheet" href="/css/macrecpopup-comp.css">
     </head>
     <body>
         
@@ -9,14 +11,10 @@
             <h1> <%= data.name %> </h1>
             <h4> <%= data.address %> </h4>
             
-                <button type="button">
-                    <a href = <%= data.link %> > Site </a>
-                </button> 
-            <p> 
-                Save
-            <p>
+            BUTTON onclick -- make component site
+                <button type="button" > Site </button> 
         </header>
-        <img src = <%= data.picture %> /> 
+        <img src = <%= "../" + data.picture %> > 
         <p>
             <%- include('./components/descbox') %>
         </p>
@@ -24,12 +22,6 @@
         <h6>
             <%- include('./components/timetable') %>
         </h6>
-        <p>
-            check to see if this works -- right now the thought is to have a nested list
-            of the places' comments and just pull it using that and then display all of them...?
-            probably not doing this right
-            <%= comments %>
-        </p>
         
     </body>
 </html>
