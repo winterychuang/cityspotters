@@ -33,6 +33,14 @@ app.get("/recommendations", (req, res) =>{
     });
 })
 
+app.get("/recommendations/:num", (req, res) =>{
+    // find 4 random non repeating places
+    res.render("recommendation_result",{
+        data: infosrc.locations, 
+        lockeys:locationstr, 
+        usednums: []
+    });
+})
 //app.get("/recommendations/results", (req, res) =>{
 //    res.send("rec page 2");
 //})

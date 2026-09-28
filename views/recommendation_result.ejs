@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+        <link rel=""stylesheet" href="/css/map.css"%>
+        <title> Results </title>
+    </head>
+    <body>
+        <header> 
+            <h1> Results </h1>
+        </header>
+        <%- include('./components/header') %>
+        <div>
+           <% for(let i = 0; i < 4;i++){ %>
+        <% let randomizeno = Math.floor(Math.random()*lockeys.length) %>
+        <%if(usednums.includes(randomizeno) == false){ %>
+            <div>
+                <p> <%= data[lockeys[randomizeno]]["name"] %> </p> 
+                <img src = <%= data[lockeys[randomizeno]]["picture"] %> > 
+                <a href = /map> Go to Info Page-- still needs working on </a>
+            </div>
+        <% } %>
+        
+        <% usednums.push(randomizeno) %>
+       
+    <% } %>
+    </div>
+    </body>
+</html>
