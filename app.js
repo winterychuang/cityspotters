@@ -4,7 +4,7 @@ const PORT = 3000;
 
 const infosrc = require("./views/components/data.js")
 app.use(express.static(__dirname + "/public"));
-
+app.use(express.urlencoded({extended: true }));
 
 app.set("view engine", "ejs")
 
@@ -33,12 +33,14 @@ app.get("/recommendations", (req, res) =>{
     });
 })
 
-app.get("/recommendations/:num", (req, res) =>{
-    // find 4 random non repeating places
+app.post("/recommendations/result", (req, res) =>{
+    const num_save = parseInt(req.body.uservalue_input)
+    let locationstr = Object.keys(infosrc.locations);
     res.render("recommendation_result",{
         data: infosrc.locations, 
         lockeys:locationstr, 
-        usednums: []
+        usednums: [],
+        usernum: num_save
     });
 })
 //app.get("/recommendations/results", (req, res) =>{

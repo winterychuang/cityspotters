@@ -24,13 +24,18 @@
             
             <% } %>
     </div>
-    <h3> Randomized Recs </h3>
-    <input id= "randomgenvalue" type = "text"/>
-    <button type = "button" > 
-        <a id = "gotoresultpg" > Surprise me! </a>  
-    </button> 
-
+    <div>
+        <h3>Randomized Recs </h3>
+    <form action="/recommendations/result" method="post">
+        <label for="uservalue"> Type a number here! </label>
+        <input type = "text" name="uservalue_input"/>
+        <button type = "submit"> Surprise me! </button>
     <script src="/script/rec.js"></script>
+    </form>
+    
+    
+    </div>
+    
     </body>
 </html>
 

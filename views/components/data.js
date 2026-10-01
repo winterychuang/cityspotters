@@ -21,7 +21,7 @@ const locations = {
         //figure out links
         link: "youtube.com",
         //store picture
-        picture: 0,
+        picture: "images/infopage-placeholder.jpeg",
         comments: {
             c1:{
                 username: "X",
@@ -267,6 +267,114 @@ kirashop: {
         picture: "images/infopage-placeholder.jpeg",
 
     },
+
+    loquat: {
+        name: "Loquat",
+        address: "198 Gough St, San Francisco, CA 94102",
+        type: "Food and Drink",
+        time: {
+            Monday: "8:00-5:00",
+            Tuesday: "8:00-5:00",
+            Wednesday:  "8:00-5:00",
+            Thursday: "8:00-5:00",
+            Friday: "8:00-5:00",
+            Saturday: "8:00-5:00",
+            Sunday: "8:00-5:00"
+        },
+        //level on scale of 1-2-3-4-5 (higher # = more expensive)
+        price: 3,
+        desc: "Middle Eastern pastries and fare in a warm and cozy environment, with a special attention to detail",
+        //figure out links
+        link: "https://loquatsf.com",
+        //store picture
+        picture: "images/infopage-placeholder.jpeg",
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        }
+        
+    },
+
+    hardwarecoffeeco: {
+        name: "Hardware Coffee Co.",
+        address: "32 W Portal Ave, San Francisco, CA 94127",
+        type: "Food and Drink",
+        time: {
+            Monday: "7:00-6:00",
+            Tuesday: "7:00-6:00",
+            Wednesday:  "7:00-6:00",
+            Thursday: "7:00-6:00",
+            Friday: "7:00-6:00",
+            Saturday: "7:00-6:00",
+            Sunday: "7:00-6:00"
+        },
+        //level on scale of 1-2-3-4-5 (higher # = more expensive)
+        price: 2,
+        desc: "2-floor cafe for all the workaholics and lovers of aesthetic spaces. There's also a florist in the back!",
+        //figure out links
+        link: "https://hardwarecoffee.co/pages/west-portal",
+        //store picture
+        picture: "images/infopage-placeholder.jpeg",
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        }
+        
+    },
+    qspecialtycoffee: {
+        name: "Hardware Coffee Co.",
+        address: "32 W Portal Ave, San Francisco, CA 94127",
+        type: "Food and Drink",
+        time: {
+            Monday: "7:00-6:00",
+            Tuesday: "7:00-6:00",
+            Wednesday:  "7:00-6:00",
+            Thursday: "7:00-6:00",
+            Friday: "7:00-6:00",
+            Saturday: "7:00-6:00",
+            Sunday: "7:00-6:00"
+        },
+        //level on scale of 1-2-3-4-5 (higher # = more expensive)
+        price: 2,
+        desc: "2-floor cafe for all the workaholics and lovers of aesthetic spaces. There's also a florist in the back!",
+        //figure out links
+        link: "https://www.qspecialtycoffee.com",
+        //store picture
+        picture: "images/infopage-placeholder.jpeg",
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        }
+        
+    },
+
     
     
 }
