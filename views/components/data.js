@@ -62,6 +62,19 @@ const locations = {
         link: "https://www.tokyocreamusa.com",
         //store picture
         picture: "images/infopage-placeholder.jpeg",
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        }
 
     },
    lapromenade: {
@@ -87,6 +100,19 @@ const locations = {
         link: "https://www.lapromenadecafe.com",
         //store picture
         picture: "images/infopage-placeholder.jpeg",
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        }
 
     },
     hookfish: {
@@ -112,7 +138,19 @@ const locations = {
         link: "http://hookfishco.com/",
         //store picture
         picture: 0,
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
 
+        }
 
     },
 
@@ -140,6 +178,19 @@ const locations = {
         link: "https://sfrecpark.org",
         //store picture
         picture: "images/infopage-placeholder.jpeg",
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        }
 
     },
    balboapark: {
@@ -165,6 +216,19 @@ const locations = {
         link: "https://sfrecpark.org",
         //store picture
         picture: "images/infopage-placeholder.jpeg",
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        }
 
     },
     larsenpeak: {
@@ -190,6 +254,19 @@ const locations = {
         link: "https://sfrecpark.org",
         //store picture
         picture: "images/infopage-placeholder.jpeg",
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        }
 
     },
 kirashop: {
@@ -215,6 +292,19 @@ kirashop: {
         link: "https://thekirashop.com",
         //store picture
         picture: "images/infopage-placeholder.jpeg",
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        }
 
     },
    greenapplebookstore: {
@@ -265,6 +355,19 @@ kirashop: {
         link: "http://www.ucsf.edu/about/cgr/current-projects/mount-sutro-open-space-reserve",
         //store picture
         picture: "images/infopage-placeholder.jpeg",
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        }
 
     },
 

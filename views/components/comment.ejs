@@ -1,0 +1,17 @@
+<div>
+  <h4>Comments</h4>
+
+  <% for(let i = 0; i < Object.keys(data.comments).length;i++){ %>
+        <% let comment_num = Object.keys(data.comments)[i] %>
+  <div>
+    <p><%= data.comments[comment_num].username %></p>
+  </div>
+  <div>
+    <p><%= data.comments[comment_num].comment %></p>
+
+  </div>
+  <div>
+    <p>Likes: <%= data.comments[comment_num].likes %></p>
+  </div>
+  <% } %>
+</div>
