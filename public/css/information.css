@@ -4,12 +4,47 @@ body{
 img{
     width:400px;
     height: 400px;
+
 }
 
 h1{
-    font-size: 72px
+    font-size: 72px;
+    font-family: "Afacad";
 }
 
 h4{
     margin-top: -50px;
+
+    font-family: "Merge One",
+    sans-serif;
+}
+
+
+.afacad{
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#page{
+    display: flex;
+    justify-content: center;
+}
+
+#site-break{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+hr{
+    width: 40vw;
+    height: 3px;
+    border:none;
+    background-color: black;
+}
+
+.section{
+    width: 40vw;
+    outline-style: solid;
 }

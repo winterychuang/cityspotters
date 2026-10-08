@@ -137,7 +137,7 @@ const locations = {
         //figure out links
         link: "http://hookfishco.com/",
         //store picture
-        picture: 0,
+        picture: "images/infopage-placeholder.jpeg",
         comments: {
             c1:{
                 username: "X",
@@ -330,6 +330,19 @@ kirashop: {
         link: "http://greenapplebooks.com/",
         //store picture
         picture: "images/infopage-placeholder.jpeg",
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        }
 
     },
     mountsutroosr: {
@@ -354,6 +367,7 @@ kirashop: {
         //figure out links
         link: "http://www.ucsf.edu/about/cgr/current-projects/mount-sutro-open-space-reserve",
         //store picture
+          //store picture
         picture: "images/infopage-placeholder.jpeg",
         comments: {
             c1:{
@@ -368,8 +382,9 @@ kirashop: {
             }
 
         }
-
+        
     },
+
 
     loquat: {
         name: "Loquat",

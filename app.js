@@ -3,6 +3,7 @@ const app = express();
 const PORT = 3000;
 
 const infosrc = require("./views/components/data.js")
+const usersrc = require("./views/components/user_data.js")
 app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({extended: true }));
 
@@ -48,7 +49,9 @@ app.post("/recommendations/result", (req, res) =>{
 //})
 
 app.get("/information/:place", (req, res) =>{
-    res.render("information", {data: infosrc.locations[req.params.place]});
+    res.render("information", {
+        data: infosrc.locations[req.params.place]
+    });
 })
 
 app.get("/settings", (req, res) =>{
@@ -56,7 +59,9 @@ app.get("/settings", (req, res) =>{
 })
 
 app.get("/profile", (req, res) =>{
-    res.render("profile");
+    res.render("profile", {
+        user: usersrc.users
+    });
 })
 
 
