@@ -2,9 +2,9 @@ body{
     background-color:"588BE6";
 }
 img{
-    width:400px;
-    height: 400px;
-
+    width: 40vw;
+    height: 60vh;
+    object-fit: cover;
 }
 
 h1{
@@ -29,22 +29,41 @@ h4{
 
 #page{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    font-family: "Merge One"
 }
 
 #site-break{
     display:flex;
     align-items:center;
-    justify-content: center;
+    justify-content: space-around;
+    margin-right: 5vw;
+    margin-left: 1vw;
+    font-family: "Afacad";
 }
 hr{
-    width: 40vw;
+    width: 50vw;
     height: 3px;
     border:none;
     background-color: black;
+    margin-right: 5vw;
 }
 
 .section{
     width: 40vw;
+    outline-style: solid;
+}
+
+.specialtext{
+    font-family: "Afacad"
+}
+
+#timetable_box{
+    padding: 3vh;
+    outline-style: solid;
+}
+
+#comment_box{
+    padding: 3vh;
     outline-style: solid;
 }

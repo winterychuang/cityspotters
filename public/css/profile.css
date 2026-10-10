@@ -1,5 +1,11 @@
-img{
+#profile_pic{
     clip-path: circle();
-    width: 300px;
-    height: 300px;
+    width: 60vw;
+    height: 60vh;
+}
+
+#profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }

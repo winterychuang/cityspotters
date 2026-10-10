@@ -2,19 +2,24 @@
     <div>
         <h1> Recommendations </h1>
     </div>
-    <div>
+    <div id="popup_buttons">
         <button type = "button"> 
             <a href = "/recommendations" > Go to Recommendations </a>
         </button>
+        <button id="hide_page_button" type= "button" onclick = "document.getElementById('recpopup').style.display = 'none'"> X </button>
     </div>
     <div>
            <% for(let i = 0; i < 4;i++){ %>
         <% let randomizeno = Math.floor(Math.random()*lockeys.length) %>
         <%if(usednums.includes(randomizeno) == false){ %>
-            <div>
-                <p> <%= data[lockeys[randomizeno]]["name"] %> </p> 
-                <img src = <%= data[lockeys[randomizeno]]["picture"] %> > 
-                <a href = /map> Go to Info Page-- still needs working on </a>
+            <div id="popup"> 
+                <div>
+                    <img src = <%= data[lockeys[randomizeno]]["picture"] %> > 
+                </div>
+                <div id="vert_align">
+                    <p> <%= data[lockeys[randomizeno]]["name"] %> </p>
+                    <a href = "/map" > Go to Info Page</a>
+                </div>
             </div>
         <% } %>
         
@@ -22,6 +27,5 @@
        
     <% } %>
     </div>
-    <button type= "button" onclick = "document.getElementById('recpopup').style.display = 'none'"> hide page </button>
 
 </div>

@@ -26,11 +26,15 @@
                 <h4> <%= data.address %> </h4>
                 <div id="site-break">
                     <hr>
-                    <a href = <%= data.link %> > Site </a>
+                    <a href = <%= data.link %> > Go to site </a>
+                </div>
+                <div id="timetable_box">
+                    <%- include('./components/timetable') %>
+                </div>    
+                <div id="comment_box">
+                    <%- include('./components/comment',{data:data}) %>
                 </div>
                 
-                    <%- include('./components/timetable') %>
-                <%- include('./components/comment',{data:data}) %>
             </div>
             
             <div id="right-info" class="section">

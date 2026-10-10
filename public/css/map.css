@@ -1,0 +1,51 @@
+.hidden{
+    display:none;
+}
+
+.afacad{
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#recpopup{
+   display: flex;
+   flex-direction: column;
+}
+
+#popup{
+    display: flex;
+    justify-content: left;
+}
+
+#vertalign{
+    display:flex;
+    flex-direction: column;
+}
+
+#popup_buttons{
+    display:flex;
+    justify-content: space-between;
+}
+
+#hide_page_button{
+    height:7vh;
+    width:7vw;
+    border-radius: 50%;
+}
+
+#recpopup p{
+    font-size: 20px;
+    font-family: "Merge One";
+}
+
+#recpopup h1{
+    font-family: "Afacad";
+}
+
+#recpopup img{
+    object-fit: cover;
+    height: 20vh;
+    width: 25vw;
+}

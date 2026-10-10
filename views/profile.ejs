@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel=""stylesheet" href="/css/profile.css"%>
+        <link rel="stylesheet" href="/css/profile.css"%>
         <div>
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +15,14 @@
         <%- include('./components/header') %>
     </div>
     <div id="profile">
-        <h1> <%= user.user1.username %> </h1>
-        <img src= <%= "../" + user.user1.picture %> >
-        <p> <%= user.user1.bio %> </p>
+        <div id = "profile_left">
+            <img id = "profile_pic" src= <%= "../" + user.user1.profile_picture %> >
+            <p> <%= user.user1.bio %> </p>
+        </div>
+        <div id = "profile_right">
+            <h1> <%= user.user1.username %> </h1>
+            <p> <%= user.user1.email %> </p> 
+        </div>     
     </div>
 
         
