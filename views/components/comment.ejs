@@ -3,15 +3,19 @@
 
   <% for(let i = 0; i < Object.keys(data.comments).length;i++){ %>
         <% let comment_num = Object.keys(data.comments)[i] %>
-  <div>
-    <p><%= data.comments[comment_num].username %></p>
-  </div>
-  <div>
-    <p><%= data.comments[comment_num].comment %></p>
+      <div id="comment">
+        <div id="comment_username">
+          <p><%= data.comments[comment_num].username %></p>
+        </div>
 
-  </div>
-  <div>
-    <p>Likes: <%= data.comments[comment_num].likes %></p>
-  </div>
+        <div id = "comment_text">
+          <p><%= data.comments[comment_num].comment %></p>
+        </div>
+
+        <div id="comment_likes">
+          <p>Likes: <%= data.comments[comment_num].likes %></p>
+        </div>
+      </div>
+  
   <% } %>
 </div>

@@ -1,24 +1,23 @@
+<div id ="real_recpopup">
+<button id="hide_page_button" type= "button" onclick = "document.getElementById('real_recpopup').style.display = 'none'"> X </button>
 <div id = "recpopup">
     <div>
-        <h1> Recommendations </h1>
+        <p id = "recheader"> Recommendations </p>
     </div>
     <div id="popup_buttons">
-        <button type = "button"> 
-            <a href = "/recommendations" > Go to Recommendations </a>
-        </button>
-        <button id="hide_page_button" type= "button" onclick = "document.getElementById('recpopup').style.display = 'none'"> X </button>
+        <a id="go_to_rec" href = "/recommendations" > Go to Recommendations </a>
     </div>
     <div>
            <% for(let i = 0; i < 4;i++){ %>
         <% let randomizeno = Math.floor(Math.random()*lockeys.length) %>
         <%if(usednums.includes(randomizeno) == false){ %>
-            <div id="popup"> 
+            <div class="popup"> 
                 <div>
                     <img src = <%= data[lockeys[randomizeno]]["picture"] %> > 
                 </div>
                 <div id="vert_align">
                     <p> <%= data[lockeys[randomizeno]]["name"] %> </p>
-                    <a href = "/map" > Go to Info Page</a>
+                    <a href =  <%= "/information/" + lockeys[randomizeno] %> > Go to Info Page</a>
                 </div>
             </div>
         <% } %>
@@ -29,3 +28,6 @@
     </div>
 
 </div>
+
+</div>
+ 

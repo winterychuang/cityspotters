@@ -1,11 +1,21 @@
 #profile_pic{
     clip-path: circle();
-    width: 60vw;
-    height: 60vh;
+    width: 50vw;
+    height: 50vh;
+    margin-left: -10vw;
 }
 
 #profile{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 10vh;
+}
+
+#profile_right{
+    margin-top: 15vh;
+}
+
+#bio{
+    margin-top: 5vh;
 }

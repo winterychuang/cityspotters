@@ -55,7 +55,7 @@ app.get("/information/:place", (req, res) =>{
 })
 
 app.get("/settings", (req, res) =>{
-    res.send("settings page");
+    res.render("settings");
 })
 
 app.get("/profile", (req, res) =>{

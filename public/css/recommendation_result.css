@@ -1,0 +1,11 @@
+#popup{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+img{
+    width: 40vw;
+    height: 60vh;
+    object-fit: cover;
+}

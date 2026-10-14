@@ -493,6 +493,45 @@ kirashop: {
         
     },
 
+     ex1restaurant2: {
+        name: "Example",
+        address: "xyz",
+        type: "Food and Drink",
+        //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
+            //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
+        //or
+        time: {
+            Monday: "9:00-6:00",
+            Tuesday: "9:00-6:00",
+            Wednesday:  "9:00-6:00",
+            Thursday: "9:00-6:00",
+            Friday: "9:00-6:00",
+            Saturday: "9:00-6:00",
+            Sunday: "9:00-6:00"
+        },
+        //level on scale of 1-2-3-4-5 (higher # = more expensive)
+        price: 2,
+        desc: "hello world!",
+        //figure out links
+        link: "youtube.com",
+        //store picture
+        picture: "images/infopage-placeholder.jpeg",
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        }
+        
+    },
+
     
     
 }

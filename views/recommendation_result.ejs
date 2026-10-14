@@ -8,7 +8,26 @@
             <h1> Results </h1>
         </header>
         <%- include('./components/header') %>
-        <p> <%= usernum %> </p>
+
+        <div>
+           <% for(let i = 0; i < usernum;i++){ %>
+        <% let randomizeno = Math.floor(Math.random()*lockeys.length) %>
+        <%if(usednums.includes(randomizeno) == false){ %>
+            <div id="popup"> 
+                <div>
+                    <img src = <%="../" + data[lockeys[randomizeno]]["picture"] %> > 
+                </div>
+                <div id="vert_align">
+                    <p> <%= data[lockeys[randomizeno]]["name"] %> </p>
+                    <a href =  <%= "/information/" + lockeys[randomizeno] %> > Go to Info Page</a>
+                </div>
+            </div>
+        <% } %>
+        
+        <% usednums.push(randomizeno) %>
+       
+    <% } %>
+    </div>
            
     </body>
 </html>

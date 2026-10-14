@@ -9,14 +9,12 @@
   font-style: normal;
 }
 
-#recpopup{
-   display: flex;
-   flex-direction: column;
-}
-
-#popup{
+.popup{
     display: flex;
     justify-content: left;
+    padding: 10vh 3vh;
+    font-size: 15px;
+    font-family: "Merge One";
 }
 
 #vertalign{
@@ -31,21 +29,39 @@
 
 #hide_page_button{
     height:7vh;
-    width:7vw;
+    width:7vh;
     border-radius: 50%;
+    position: absolute;
+    position-anchor: --exit_anchor;
+    position-area: top right;
+    margin-bottom: -4.5vh;
+    margin-left: -4vh
 }
 
-#recpopup p{
-    font-size: 20px;
-    font-family: "Merge One";
-}
 
-#recpopup h1{
+#recheader{
+    font-size: 25px;
     font-family: "Afacad";
+    text-align: center;
 }
+
+#go_to_rec{
+    margin-left: 13.75vh;
+}
+
+#recpopup{
+    margin: 5vh;
+    background-color: #FEF8E5;
+    max-width: 50vh;
+    display: flex;
+    flex-direction: column;
+    anchor-name: --exit_anchor;
+}
+
 
 #recpopup img{
     object-fit: cover;
-    height: 20vh;
-    width: 25vw;
+    height: 15vh;
+    width: 15vw;
+    margin-right: 5vh
 }

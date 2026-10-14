@@ -22,12 +22,15 @@
         </header>
         <div id="page">
             <div id="left-info" class="section">
-                <h1> <%= data.name %> </h1>
-                <h4> <%= data.address %> </h4>
-                <div id="site-break">
-                    <hr>
-                    <a href = <%= data.link %> > Go to site </a>
+                <div id="heading">
+                    <h1> <%= data.name %> </h1>
+                    <h4> <%= data.address %> </h4>
+                    <div id="site-break">
+                        <hr>
+                        <a href = <%= data.link %> > Go to site </a>
                 </div>
+                </div>
+                
                 <div id="timetable_box">
                     <%- include('./components/timetable') %>
                 </div>    
@@ -39,9 +42,11 @@
             
             <div id="right-info" class="section">
                 <img src = <%= "../" + data.picture %> > 
-                <p>
-                    <%- include('./components/descbox') %>
-                </p>
+                <div id="description">
+                    <p>
+                        <%- include('./components/descbox') %>
+                    </p>
+                </div>
             </div>
             
 

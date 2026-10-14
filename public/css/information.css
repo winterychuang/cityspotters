@@ -51,19 +51,69 @@ hr{
 
 .section{
     width: 40vw;
-    outline-style: solid;
+
 }
 
 .specialtext{
-    font-family: "Afacad"
+    font-family: "Afacad";
+    font-size: 20px;
+    margin-top: -0.5vh;
 }
 
 #timetable_box{
     padding: 3vh;
-    outline-style: solid;
+    border:0.5vh;
+    border-radius: 5vh;
+    background-color: #FEF8E5;
+    border-color: black; 
 }
 
+#timetable_body{
+    margin: 0.005vh;
+    padding: 1.5vh;
+    border: 0.5vh;
+    border-radius: 5vh;
+    background-color: #96A8C8;
+    border-color: black; 
+}
+
+.timetable_day{
+    padding: 0.5vh 1vh;
+    border: 0.2vh;
+    border-radius: 3vh;
+    background-color: #BFCDE0;
+    border-color: black; 
+    font-size: 12px;
+    margin: 1.5vh 0.1vh;
+}
 #comment_box{
+    padding: 1.5vh 1vh;
+    border: 0.2vh;
+    border-radius: 3vh;
+    background-color: #96A8C8;
+    border-color: black; 
+    font-size: 12px;
+    margin: 2vh 0.1vh;
+}
+
+#heading{
+    margin-bottom: 3vh
+}
+
+#description{
+    margin-top: 5vh;
+    border: 1vh;
     padding: 3vh;
-    outline-style: solid;
+    border-radius: 5vh;
+    background-color: #BFCDE0;
+    border-color: black; 
+}
+
+#comment{
+    margin: 2vh 1vh;
+    border: 1vh;
+    padding: 1.5vh 3vh;
+    border-radius: 5vh;
+    background-color: #BFCDE0;
+    border-color: black; 
 }
