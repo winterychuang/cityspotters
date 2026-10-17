@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <head>
-        <link rel=""stylesheet" href="/css/recommendations.css"%>
+        <link rel="stylesheet" href="/css/recommendations.css"%>
         <div>
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,37 +10,47 @@
     </head>
     <body>
         <header> 
-            <h1> Recommendations </h1>
+            <p id="specialtext"> Recommendations </h1>
             <%- include('./components/header') %>
         </header>
-       
-    <div>  
-        <h3> Recommendation of the Day: </h3>
-        <% for(let i = 0; i < 1;i++){ %>
-                <% let randomizeno = parseInt(Math.random()*lockeys.length) %>
-                <%if(usednums.includes(randomizeno) == false){ %>
-                    <div>
-                        <p> <%= data[lockeys[randomizeno]]["name"] %> </p> 
-                        <img src = <%= data[lockeys[randomizeno]]["picture"] %> > 
-                        <a href = /map> Go to Info Page-- still needs working on </a>
-                    </div>
-                <% } %>
+    <div id="rec_body">
+        <div class="section" id="daily_rec">
+            <div>
+                <p class="subheading"> Recommendation of the Day: </p>
+            </div>
+            <% for(let i = 0; i < 1;i++){ %>
+                    <% let randomizeno = parseInt(Math.random()*lockeys.length) %>
+                    <%if(usednums.includes(randomizeno) == false){ %>
+                        <div id="recbox">
+                            <div >
+                                <img id="random_img" src = "<%= data[lockeys[randomizeno]]["picture"] %>" >
+                             </div>
+                            <div id="recbox_name">
+                                <p> <%= data[lockeys[randomizeno]]["name"] %> </p>
+                            </div>
+                             <div id ="link_to">
+                                <a  href = <%= "/information/" + lockeys[randomizeno] %>> Go to Info Page </a>
+                             </div>
+                        </div>
+                    <% } %>
+                    
+                    <% usednums.push(randomizeno) %>
                 
-                <% usednums.push(randomizeno) %>
-            
-            <% } %>
-    </div>
-    <div>
-        <h3>Randomized Recs </h3>
-    <form action="/recommendations/result" method="post">
-        <label for="uservalue"> Type a number here! </label>
-        <input type = "text" name="uservalue_input"/>
-        <button type = "submit"> Surprise me! </button>
-    </form>
-    <script src="/script/rec.js"></script>
-    
-    </div>
-    
+                <% } %>
+        </div>
+        <div class="section" id="random_rec">
+            <p class="subheading">Randomized Recs </p>
+        <form action="/recommendations/result" method="post">
+            <label for="uservalue"> Type a number here to give that amount of recommendations back! </label>
+            <div id="submit_form">
+            <input type = "text" name="uservalue_input" />
+            <button type = "submit"> Surprise me! </button>
+            </div>
+        </form>
+        </div>
+    </div> 
+
+
     </body>
 </html>
 

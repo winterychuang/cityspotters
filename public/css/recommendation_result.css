@@ -1,11 +1,38 @@
+.afacad{
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
 #popup{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
+    align-items: center;
+    background-color: #FEF8E5;
+    padding: 5vh;
+    margin: 5vh;
+    margin-bottom: -5vh;
+}
+
+#specialtext{
+    font-size: 30px;
+    font-family: "Afacad";
+}
+#vert_align{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 40vh;
 }
 
 img{
-    width: 40vw;
-    height: 60vh;
+    width: 35vw;
+    height: 35vh;
     object-fit: cover;
 }
+
+

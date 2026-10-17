@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <div>
             <link rel="stylesheet" href="/css/information.css">
-            <link rel="stylesheet" href="/css/macrecpopup-comp.css">
-        </div>
-
-        <div>
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
             <link href="https://fonts.cdnfonts.com/css/merge-one" rel="stylesheet">
-        </div>
-        
-
+            <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     </head>
     <body>
         
@@ -41,7 +36,29 @@
             </div>
             
             <div id="right-info" class="section">
-                <img src = <%= "../" + data.picture %> > 
+                <img src = <%= "../" + data.picture[0] %> >
+                <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <% for(let i=1;i< data.picture.length; i+=1){ %>
+                            <li data-target="#myCarousel" data-slide-to= <%= i+"" %> ></li>
+                        <%}%>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            
+                        </div>
+                        <% for(let i=1;i< data.picture.length; i+=1){ %>
+                            <div class="item">
+                                <img src = <%= "../" + data.picture[i] %> >
+                            </div>
+                        <%}%>
+                        
+                    </div>
+                    
+                </div> -->
+                
+                
                 <div id="description">
                     <p>
                         <%- include('./components/descbox') %>

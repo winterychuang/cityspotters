@@ -1,9 +1,10 @@
 body{
     background-color:"588BE6";
 }
+
 img{
-    width: 40vw;
-    height: 60vh;
+    width: 55vh;
+    height: 55vh;
     object-fit: cover;
 }
 
@@ -27,6 +28,11 @@ h4{
   font-style: normal;
 }
 
+#right-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 #page{
     display: flex;
     justify-content: space-evenly;

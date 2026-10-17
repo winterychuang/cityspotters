@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
-        <link rel=""stylesheet" href="/css/map.css"%>
-        <title> Results </title>
+        <link rel="stylesheet" href="/css/recommendation_result.css"%>
+        <div>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+            <link href="https://fonts.cdnfonts.com/css/merge-one" rel="stylesheet">
+        </div>
     </head>
     <body>
         <header> 
-            <h1> Results </h1>
+            <%- include('./components/header') %>
+            <p id="specialtext"> Results </p>
         </header>
-        <%- include('./components/header') %>
-
         <div>
            <% for(let i = 0; i < usernum;i++){ %>
         <% let randomizeno = Math.floor(Math.random()*lockeys.length) %>
         <%if(usednums.includes(randomizeno) == false){ %>
             <div id="popup"> 
-                <div>
+                <div id="img_result">
                     <img src = <%="../" + data[lockeys[randomizeno]]["picture"] %> > 
                 </div>
                 <div id="vert_align">
