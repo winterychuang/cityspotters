@@ -17,7 +17,7 @@ const locations = {
         },
         //level on scale of 1-2-3-4-5 (higher # = more expensive)
         price: 2,
-        desc: "hello world!",
+        desc: "hello world! This is a test for descriptions. It should not be shown in the demo.",
         //figure out links
         link: "youtube.com",
         //store picture
@@ -34,7 +34,13 @@ const locations = {
                 likes: 2
             }
 
-        }
+        },
+        tags: [
+            "Legacy Business", 
+            "In a Historically Disadvantaged Neighborhood", 
+            "Close to Public Transit", 
+            "Women-owned"
+        ]
         
     },
 
