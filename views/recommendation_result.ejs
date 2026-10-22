@@ -9,10 +9,11 @@
         </div>
     </head>
     <body>
-        <header> 
-            <%- include('./components/header') %>
-            <p id="specialtext"> Results </p>
-        </header>
+        <div id="top-nav">
+            <p class="pagetitle"> Results </p>
+            <%- include('./components/header') %>  
+         </div> 
+
         <div>
            <% for(let i = 0; i < usernum;i++){ %>
         <% let randomizeno = Math.floor(Math.random()*lockeys.length) %>

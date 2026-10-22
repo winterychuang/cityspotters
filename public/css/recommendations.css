@@ -69,4 +69,16 @@
     padding-top: -5vh;
 }
 
+.pagetitle{
+    font-size: 18px;
+    font-family: "Afacad";
+}
+
+#top-nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 

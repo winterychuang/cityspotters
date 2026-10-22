@@ -7,22 +7,21 @@
             <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
             <link href="https://fonts.cdnfonts.com/css/merge-one" rel="stylesheet">
         </div>
-
-        <title>Map</title>
     </head>
 
     <body>
-        <header> 
-            <%- include('./components/header') %>
-        </header> 
-
-    
-
-        <div id = "map">
-
-        </div>
-        <button id="showrecpopup" onclick = "document.getElementById('real_recpopup').style.display = 'block'"%> > Recommendations</button> 
-        <%- include('./components/maprecpopup')%>
+        <div id="top-nav">
+        <p class="pagetitle"> Map </p>
+        <%- include('./components/header') %>  
+    </div> 
+<div class="page">
+    <div id = "map">
+        <p> map here... </p>
+    </div>
+    <button id="showrecpopup" onclick = "document.getElementById('real_recpopup').style.display = 'block'"%> > Recommendations</button> 
+    <%- include('./components/maprecpopup')%>
+</div>
+        
 
 
     </body>

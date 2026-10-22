@@ -17,10 +17,7 @@
     margin-bottom: -5vh;
 }
 
-#specialtext{
-    font-size: 30px;
-    font-family: "Afacad";
-}
+
 #vert_align{
     display: flex;
     justify-content: space-evenly;
@@ -34,5 +31,18 @@ img{
     height: 35vh;
     object-fit: cover;
 }
+
+.pagetitle{
+    font-size: 18px;
+    font-family: "Afacad";
+}
+
+#top-nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 

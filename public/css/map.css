@@ -1,3 +1,14 @@
+body{
+    background-color: #588BE6;
+}
+
+.page{
+    background-color: white;
+    border-radius: 15vh;
+    padding: 7vh;
+    margin: 3vh;
+}
+
 .hidden{
     display:none;
 }
@@ -66,3 +77,17 @@
     width: 20vh;
     margin-right: 5vh
 }
+
+.pagetitle{
+    font-size: 18px;
+    font-family: "Afacad";
+}
+
+#top-nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+

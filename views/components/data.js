@@ -37,9 +37,10 @@ const locations = {
         },
         tags: [
             "Legacy Business", 
-            "In a Historically Disadvantaged Neighborhood", 
+            "In a Historically Underserved Neighborhood", 
             "Close to Public Transit", 
-            "Women-owned"
+            "Women-owned",
+            "Free for All"
         ]
         
     },
@@ -80,7 +81,11 @@ const locations = {
                 likes: 2
             }
 
-        }
+        },
+        tags: [ 
+            "Close to Public Transit", 
+            "Women-owned"
+        ]
 
     },
    lapromenade: {

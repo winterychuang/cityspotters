@@ -49,13 +49,27 @@ app.post("/recommendations/result", (req, res) =>{
 //})
 
 app.get("/information/:place", (req, res) =>{
+    let legbiz = "Legacy Business";
+    let hun = "In a Historically Underserved Neighborhood";
+    let women_owned = "Women-owned";
+    let pubtrans = "Close to Public Transit";
+    let free = "Free for All"
     res.render("information", {
-        data: infosrc.locations[req.params.place]
+        data: infosrc.locations[req.params.place],
+        legbiz: legbiz,
+        hun: hun,
+        pubtrans: pubtrans,
+        women_owned: women_owned,
+        free: free
     });
 })
 
 app.get("/settings", (req, res) =>{
     res.render("settings");
+})
+
+app.get("/information", (req, res) => {
+    res.render("info")
 })
 
 app.get("/profile", (req, res) =>{

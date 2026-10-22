@@ -2,15 +2,19 @@ body{
     background-color: #588BE6;
 }
 
-#page{
+.page{
     background-color: white;
     border-radius: 15vh;
     padding: 7vh;
     margin: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Merge One"
 }
+
 img{
-    width: 60vh;
-    height: 60vh;
+    width: 50vh;
+    height: 50vh;
     object-fit: cover;
 }
 
@@ -34,15 +38,12 @@ h4{
 }
 
 #right-info{
+    margin-top: 5vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-#page{
-    display: flex;
-    justify-content: space-evenly;
-    font-family: "Merge One"
-}
+
 
 #site-break{
     display:flex;
@@ -52,6 +53,7 @@ h4{
     margin-left: 1vw;
     font-family: "Afacad";
 }
+
 hr{
     width: 50vw;
     height: 3px;
@@ -97,6 +99,7 @@ hr{
     font-size: 12px;
     margin: 1.5vh 0.1vh;
 }
+
 #comment_box{
     padding: 1.5vh 1vh;
     border: 0.2vh;
@@ -118,7 +121,7 @@ hr{
     border-radius: 5vh;
     background-color: #BFCDE0;
     border-color: black; 
-    max-width: 60vh;
+    width: 50vh;
 }
 
 #comment{
@@ -133,21 +136,70 @@ hr{
 #tag_box{
     background-color: #BFCDE0;
     border-radius: 10vh;
-    max-height: 15vh;
-    width: 60vh;
-    margin: 3vh 1vh;
+    height: 7.5vh;
+    width: 50vh;
+    margin: 3vh 2vh;
     display: flex;
     flex-direction: row;
-    padding: 1vh 1vh;
+    padding: 1.5vh 2vh;
 }
 
 #tag{
     font-size: 12px;
     background-color: #96A8C8;
     border-radius: 5vh;
-    margin: 0.5vh;
+    margin: 0.5vh 5vh;
     padding: 1vh;
+    max-width: 17.5vh;
+    max-height: 12.5vh;
     display:flex;
     align-items: center;
     text-align: center;
+    position: relative;
+}
+
+.hover_text{
+    display: none;
+    font-size: 12px;
+    background-color: #FEF8E5;
+    outline: 0.2vh solid black;
+    outline-color: black;
+    margin: 0.5vh;
+    padding: 1vh;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0.5vh 0.5vh black;
+    position: absolute;
+    top: 10vh;
+    max-width: 25vh;
+    height: auto;
+    text-overflow: wrap;
+}
+
+#tag:hover .hover_text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#tag, .hover_text {    
+  margin-left: auto;    
+  margin-right: auto;  
+  width: fit-content;
+}
+
+.no_show_links{
+    color: inherit;
+    text-decoration: none;
+}
+
+.pagetitle{
+    font-size: 18px;
+    font-family: "Afacad";
+}
+
+#top-nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

@@ -1,5 +1,42 @@
- <% for(let i=0; i <= data.tags.length -1; i++){ %>
+ 
+ <% for(let i=0; i <= data.tags.length-1; i++){ %>
     <div id="tag">
-        <p> <%= data.tags[i] %> </p>
+        <% if(data.tags[i] == legbiz){ %>
+            <a class="no_show_links" href="/information#legacybiz"> <%= data.tags[i] %> </a>
+            <div class="hover_text">
+                This place is designated as a Legacy Business by the SF Government 
+            </div>
+        <%}%>
+
+        <%if(data.tags[i] == hun ){ %>
+            <a class="no_show_links" href="/information#HUNs"> <%= data.tags[i] %> </a>
+            <div class="hover_text">
+                This place is within a historically underserved neighborhood of SF
+            </div>     
+        <%}%>
+
+        <%if(data.tags[i] == pubtrans ){ %>
+            <a class="no_show_links" href="/information"> <%= data.tags[i] %> </a>
+            <div class="hover_text">
+                This place is within a reasonable walking distance from methods of public transport (MUNI, bus, etc.)
+            </div>
+        <%}%>
+
+        <% if(data.tags[i] == women_owned){ %>
+            <a class="no_show_links" href="/information"> <%= data.tags[i] %> </a>
+            <div class="hover_text">
+                This place is owned and staffed by majority women
+            </div>
+        <%}%>
+
+        <% if(data.tags[i] == free){ %>
+            <a class="no_show_links" href="/information"> <%= data.tags[i] %> </a>
+            <div class="hover_text">
+                This place is completely free to enter and use
+        <%}%>
+
     </div>
 <%}%>
+
+
+

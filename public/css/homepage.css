@@ -2,3 +2,33 @@ img{
     width: 100vw;
     height: 100vw; 
 }
+
+body{
+    background-color: #588BE6;
+}
+
+.afacad{
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.pagetitle{
+    font-size: 18px;
+    font-family: "Afacad";
+}
+
+#top-nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page{
+    background-color: white;
+    border-radius: 15vh;
+    padding: 7vh;
+    margin: 3vh;
+}

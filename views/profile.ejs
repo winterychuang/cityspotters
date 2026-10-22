@@ -10,22 +10,26 @@
         </div> 
     </head>
     <body>
-    <div id = "profile_head">
-        <title> Profile </title>       
-        <%- include('./components/header') %>
-    </div>
-    <div id="profile">
-        <div id = "profile_left">
-            <img id = "profile_pic" src= <%= "../" + user.user1.profile_picture %> >
-            <p id="bio"> <%= user.user1.bio %> </p>
-        </div>
-        <div id = "profile_right">
-            <h1> <%= user.user1.username %> </h1>
-            <p> <%= user.user1.email %> </p> 
-        </div>     
-    </div>
+        <div id="top-nav">
+            <p class="pagetitle"> Profile </p>
+            <%- include('./components/header') %>  
+        </div> 
+        <div class ="page">
+        <div id="profile">
+            <div id = "profile_left">
+                <img id = "profile_pic" src= <%= "../" + user.user1.profile_picture %> >
+                <p id="bio"> <%= user.user1.bio %> </p>
+            </div>
 
-        
+            <div id = "profile_right">
+                <h1> <%= user.user1.username %> </h1>
+                <p> <%= user.user1.email %> </p> 
+            </div>     
+        </div>
+
+        </div>
+
+
         
 
     </body>
