@@ -30,13 +30,6 @@ h4{
 }
 
 
-.afacad{
-  font-family: "Afacad", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
 #right-info{
     margin-top: 5vh;
     display: flex;
@@ -193,13 +186,16 @@ hr{
     text-decoration: none;
 }
 
-.pagetitle{
-    font-size: 18px;
-    font-family: "Afacad";
-}
 
-#top-nav{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+#comment_input{
+    background-color:#FEF8E5;
+    border-radius: 5vh;
+    outline: 0.2vh solid black;
+    outline-color: black;
+    height: 6vh;
+    font-size: 12px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 3vh;
 }

@@ -1,11 +1,3 @@
-.afacad{
-  font-family: "Afacad", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-
 #popup{
     display: flex;
     justify-content: space-between;
@@ -30,18 +22,6 @@ img{
     width: 35vw;
     height: 35vh;
     object-fit: cover;
-}
-
-.pagetitle{
-    font-size: 18px;
-    font-family: "Afacad";
-}
-
-#top-nav{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 }
 
 

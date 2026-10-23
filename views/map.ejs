@@ -1,6 +1,7 @@
 <!DOCTYPE html>
     <head>
-        <link rel="stylesheet" href="/css/map.css"%>
+        <link rel="stylesheet" href="/css/map.css"/>
+        <link rel= "stylesheet" href= "/css/standardization.css"/>
         <div>
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
     <div id = "map">
         <p> map here... </p>
     </div>
-    <button id="showrecpopup" onclick = "document.getElementById('real_recpopup').style.display = 'block'"%> > Recommendations</button> 
+    <button id="showrecpopup" onclick = "document.getElementById('real_recpopup').style.display = 'block'; this.style.display ='none'"%> > Recommendations</button> 
     <%- include('./components/maprecpopup')%>
 </div>
         

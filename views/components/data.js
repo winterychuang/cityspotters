@@ -123,48 +123,13 @@ const locations = {
                 likes: 2
             }
 
-        }
-
-    },
-    hookfish: {
-        name: "Hook Fish Co",
-        type: "Food and Drink",
-        address: "4542 Irving St, San Francisco, CA 94122",
-        //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
-            //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
-        //or
-        time: {
-            Monday: "11:00AM-9:00PM",
-            Tuesday: "11:00AM-9:00PM",
-            Wednesday:  "11:00AM-9:00PM",
-            Thursday: "11:00AM-9:00PM",
-            Friday: "11:00AM-9:00PM",
-            Saturday: "11:00AM-9:00PM",
-            Sunday: "11:00AM-9:00PM"
         },
-        //level on scale of 1-2-3-4-5 (higher # = more expensive)
-        price: 4,
-        desc: "Standout fish n chips place with a mean tartar sauce and addictive fries.",
-        //figure out links
-        link: "http://hookfishco.com/",
-        //store picture
-        picture: "images/infopage-placeholder.jpeg",
-        comments: {
-            c1:{
-                username: "X",
-                comment: "yay!", 
-                likes: 6
-            },
-            c2: {
-                username: "Y",
-                comment: "wow",
-                likes: 2
-            }
-
-        }
+        tags: [
+            "Close to Public Transit", 
+        ]
 
     },
-
+       
 
     deadmanspoint: {
         name: "Deadman's Point",
@@ -201,7 +166,11 @@ const locations = {
                 likes: 2
             }
 
-        }
+        },
+
+        tags: [
+            "Free for All"
+        ]
 
     },
    balboapark: {
@@ -239,7 +208,12 @@ const locations = {
                 likes: 2
             }
 
-        }
+        },
+        tags: [
+            "In a Historically Underserved Neighborhood", 
+            "Close to Public Transit", 
+            "Free for All"
+        ]
 
     },
     larsenpeak: {
@@ -277,7 +251,10 @@ const locations = {
                 likes: 2
             }
 
-        }
+        },
+        tags: [
+            "Free for All"
+        ]
 
     },
 kirashop: {
@@ -315,7 +292,11 @@ kirashop: {
                 likes: 2
             }
 
-        }
+        },
+        tags: [
+            "Close to Public Transit", 
+            "Women-owned",
+        ]
 
     },
    greenapplebookstore: {
@@ -353,7 +334,12 @@ kirashop: {
                 likes: 2
             }
 
-        }
+        },
+
+        tags: [
+            "Legacy Business", 
+            "Close to Public Transit"
+        ]
 
     },
     mountsutroosr: {
@@ -392,7 +378,10 @@ kirashop: {
                 likes: 2
             }
 
-        }
+        },
+        tags: [
+            "Free for All"
+        ]
         
     },
 
@@ -429,7 +418,12 @@ kirashop: {
                 likes: 2
             }
 
-        }
+        },
+        tags: [
+            "In a Historically Underserved Neighborhood", 
+            "Close to Public Transit", 
+            "Women-owned",
+        ]
         
     },
 
@@ -465,7 +459,10 @@ kirashop: {
                 likes: 2
             }
 
-        }
+        },
+        tags: [
+            "Close to Public Transit"
+        ]
         
     },
     qspecialtycoffee: {
@@ -500,48 +497,13 @@ kirashop: {
                 likes: 2
             }
 
-        }
-        
-    },
-
-     kawanoya: {
-        name: "Kawanoya",
-        address: "1689 Church St, San Francisco, CA 94131",
-        type: "Food and Drink",
-        //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
-            //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
-        //or
-        time: {
-            Monday: "Closed",
-            Tuesday: "11:30AM-2:30PM and 4:30-9:30PM",
-            Wednesday:  "11:30AM-2:30PM and 4:30-9:30PM",
-            Thursday: "11:30AM-2:30PM and 4:30-9:30PM",
-            Friday: "11:30AM-2:30PM and 4:30-10:30PM",
-            Saturday: "11:30AM-2:30PM and 4:30-10:30PM",
-            Sunday: "11:30AM-2:30PM and 4:30-9:30PM"
         },
-        //level on scale of 1-2-3-4-5 (higher # = more expensive)
-        price: 4,
-        desc: "Elevated Japanese fare, with addictively crunchy katsu and a casual + calm atmosphere.",
-        //figure out links
-        link: "https://kawanoya-sf.forumdas.com.tr/#gsc.tab=0",
-        //store picture
-        picture: "images/infopage-placeholder.jpeg",
-        comments: {
-            c1:{
-                username: "X",
-                comment: "yay!", 
-                likes: 6
-            },
-            c2: {
-                username: "Y",
-                comment: "wow",
-                likes: 2
-            }
-
-        }
+        tags: [
+            "In a Historically Underserved Neighborhood", 
+        ]
         
     },
+
     buenavista: {
         name: "Buena Vista Park",
         address: "Buena Vista &, Haight St, San Francisco, CA 94117",
@@ -577,7 +539,10 @@ kirashop: {
                 likes: 2
             }
 
-        }
+        },
+       tags: [
+            "Free for All"
+        ]
         
     },
 
@@ -616,7 +581,11 @@ kirashop: {
                 likes: 2
             }
 
-        }
+        },
+        tags: [
+            "Close to Public Transit", 
+            "Free for All"
+        ]
         
     },
 
@@ -655,85 +624,11 @@ kirashop: {
                 likes: 2
             }
 
-        }
-        
-    },
-
-    whiskerwoodhaven: {
-        name: "Whiskerwood Haven",
-        address: "3000 Geary Blvd, San Francisco, CA 94118",
-        type: "Other",
-        //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
-            //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
-        //or
-        time: {
-            Monday: "11:00AM-7:00PM",
-            Tuesday: "11:00AM-7:00PM",
-            Wednesday:  "11:00AM-7:00PM",
-            Thursday: "11:00AM-7:00PM",
-            Friday: "11:00AM-7:00PM",
-            Saturday: "11:00AM-7:00PM",
-            Sunday: "11:00AM-7:00PM"
         },
-        //level on scale of 1-2-3-4-5 (higher # = more expensive)
-        price: 2,
-        desc: "Open space featuring adorable cats and drinks. Reservations and payment required.",
-        //figure out links
-        link: "https://whiskerwoodhaven.com/",
-        //store picture
-        picture: "images/infopage-placeholder.jpeg",
-        comments: {
-            c1:{
-                username: "X",
-                comment: "yay!", 
-                likes: 6
-            },
-            c2: {
-                username: "Y",
-                comment: "wow",
-                likes: 2
-            }
-
-        }
-        
-    },
-
-    tailorsson: {
-        name: "The Tailor's Son",
-        address: "2049 Fillmore St, San Francisco, CA 94115",
-        type: "Food and Drink",
-        //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
-            //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
-        //or
-        time: {
-            Monday: "11:30AM-9:30PM",
-            Tuesday: "11:30AM-9:30PM",
-            Wednesday:  "11:30AM-9:30PM",
-            Thursday: "11:30AM-9:30PM",
-            Friday: "11:30AM-10:30PM",
-            Saturday: "11:00AM-10:30PM",
-            Sunday: "11:00AM-9:00PM"
-        },
-        //level on scale of 1-2-3-4-5 (higher # = more expensive)
-        price: 4,
-        desc: "Bright and eclectic space for Milanese cuisine with a flair for the classics, elevated.",
-        //figure out links
-        link: "https://thetailorssonsf.com/",
-        //store picture
-        picture: "images/infopage-placeholder.jpeg",
-        comments: {
-            c1:{
-                username: "X",
-                comment: "yay!", 
-                likes: 6
-            },
-            c2: {
-                username: "Y",
-                comment: "wow",
-                likes: 2
-            }
-
-        }
+        tags: [
+            "Close to Public Transit", 
+            "Women-owned",
+        ]
         
     },
 
@@ -772,7 +667,12 @@ kirashop: {
                 likes: 2
             }
 
-        }
+        },
+        tags: [
+            "In a Historically Underserved Neighborhood", 
+            "Close to Public Transit", 
+            "Free for All"
+        ]
         
     },
 
@@ -811,9 +711,103 @@ kirashop: {
                 likes: 2
             }
 
-        }
+        },
+        tags: [
+            "In a Historically Underserved Neighborhood", 
+            "Close to Public Transit", 
+            "Free for All"
+        ]
         
     },
+
+        pollyanns: {
+        name: "Polly Ann Ice Cream",
+        address: "950 Gough St, San Francisco, CA 94102",
+        type: "Food and Drink",
+        //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
+            //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
+        //or
+        time: {
+            Monday: "12:00PM-7:00PM",
+            Tuesday: "12:00PM-8:00PM",
+            Wednesday:  "12:00PM-8:00PM",
+            Thursday: "12:00PM-8:00PM",
+            Friday: "12:00PM-8:00PM",
+            Saturday: "Closed",
+            Sunday: "1:00PM-7:00PM"
+        },
+        //level on scale of 1-2-3-4-5 (higher # = more expensive)
+        price: 2,
+        desc: "Iconic ice cream shop that has a multitude of flavors and a unique experience.",
+        //figure out links
+        link: "https://sfrecpark.org/facilities/facility/details/Jefferson-Square-343",
+        //store picture
+        picture: "images/infopage-placeholder.jpeg",
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        },
+        tags: [
+            "In a Historically Underserved Neighborhood", 
+            "Close to Public Transit", 
+            "Free for All"
+        ]
+        
+    },
+
+        simplepleasures: {
+        name: "Simple Pleasures Cafe",
+        address: "3434 Balboa St, San Francisco, CA 94121",
+        type: "Food and Drink",
+        //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
+            //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
+        //or
+        time: {
+            Monday: "6:00AM-9:00PM",
+            Tuesday: "6:00AM-9:00PM",
+            Wednesday:  "6:00AM-9:00PM",
+            Thursday: "6:00AM-9:00PM",
+            Friday: "6:00AM-9:00PM",
+            Saturday: "6:00AM-9:00PM",
+            Sunday: "6:00AM-9:00PM"
+        },
+        //level on scale of 1-2-3-4-5 (higher # = more expensive)
+        price: 1,
+        desc: "Local cafe that is a mainstay for locals, featuring a lived-in experience and cozy ambiance.",
+        //figure out links
+        link: "https://www.simplepleasures-sf.com",
+        //store picture
+        picture: "images/infopage-placeholder.jpeg",
+        comments: {
+            c1:{
+                username: "X",
+                comment: "yay!", 
+                likes: 6
+            },
+            c2: {
+                username: "Y",
+                comment: "wow",
+                likes: 2
+            }
+
+        },
+        tags: [
+            "Legacy Business",  
+            "Close to Public Transit", 
+            "Women-owned"
+        ]
+        
+    },
+
     
     
 
