@@ -16,6 +16,8 @@
     flex-direction: column;
     align-items: center;
     padding-right: 40vh;
+    padding-left: 10vh;
+    width: auto;
 }
 
 img{
