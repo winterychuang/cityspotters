@@ -1,4 +1,7 @@
-.hidden{
+#map { 
+    height: 180px; 
+    width: 300px;
+}.hidden{
     display:none;
 }
 

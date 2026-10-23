@@ -8,22 +8,21 @@
             <link href="https://fonts.cdnfonts.com/css/merge-one" rel="stylesheet">
     </head>
     <body>
-    <div id="top-nav">
-        <p class="pagetitle"> Homepage </p>
-        <%- include('./components/header') %>  
-    </div> 
+        <!-- <h1> Cityspotters </h1> -->
+        <%- include('./components/header') %>
+        <div id="main">
+            <img src="images/placehold-logo.png"/>
 
-    <div class="page">
-        <img src="images/placehold-logo.png"/>
+        <button type="button">
+            <style>
 
-            <a href = "/map">Go to map</a>
+            </style>
+            <a id="bt" href = "/map">Go to map ></a>
+        </button>
         
-        <p> 
-            Cityspotters is a website dedicated to helping people find and get informed about San 
-            Francisco's local businesses.
-        </p>
+        <p>            Cityspotters is a website dedicated to helping people find and get informed about San Francisco.</p>
 
-    </div>
+        </div>
         
     </body>
 </html>

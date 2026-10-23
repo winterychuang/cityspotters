@@ -1,4 +1,44 @@
+body{
+    background-color: #588BE6;
+}
+
 img{
-    width: 100vw;
-    height: 100vw; 
+    max-height:70%;
+    max-width: 70%; 
+}
+
+button{
+    background-color:  #96A8C8;
+    padding: 15px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+a{
+    text-decoration:none;
+}
+
+#bt{
+    color: #0D0B0B;
+    font-size:30px;
+}
+
+p{
+    font-size:30px;
+    background-color: #96A8C8;
+    color:#0D0B0B;
+    padding: 15px;
+    border-radius: 20px;
+    border: 0px;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+#main{
+    background-color:#ffffff;
+    margin-left: 15px;
+    margin-right:15px;
+    padding:15px;
+    border-radius:20px;
+    border: 0px;
 }
