@@ -1,5 +1,67 @@
-img{
-    height: 300px;
-    width: 300px;
-    
+#random_img{
+    width: 35vw;
+    height: 45vh;
+    object-fit: cover;
 }
+
+.page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#daily_rec{
+    display: flex;
+    flex-direction: column;
+    font-family: "Afacad";
+    background-color: #FEF8E5;
+    max-width: 70vh;
+    margin-top: 3vh;
+    padding: 2vh 3vh;
+    margin-right: 3vh
+}
+
+#random_rec{
+    display: flex;
+    flex-direction: column;
+    background-color: #FEF8E5;
+    margin-top: 3vh;
+    padding: 2vh 3vh;
+    max-height: 20vh;
+    max-width: 70vh;
+    text-overflow: wrap;
+    margin-left: 3vh
+}
+
+#submit_form{
+    margin: 3vh 1vh;
+
+}
+
+#link_to{
+    padding-top: -5vh;
+}
+
+#random_rec{
+    font-family: "Afacad";
+}
+
+.subheading{
+    font-family: "Merge One";
+    font-size: 22px;
+}
+#specialtext{
+    font-size: 30px;
+
+}
+#recbox{
+    display: flex;
+    flex-direction: column;
+}
+
+#recbox_name{
+    font-size: 20px;
+    padding-top: -5vh;
+}
+
+

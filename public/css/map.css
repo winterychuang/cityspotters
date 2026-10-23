@@ -1,4 +1,73 @@
 #map { 
     height: 180px; 
     width: 300px;
+}.hidden{
+    display:none;
 }
+
+.afacad{
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.popup{
+    display: flex;
+    justify-content: left;
+    padding: 10vh 3vh;
+    font-size: 15px;
+    font-family: "Merge One";
+    overflow-wrap: anywhere;
+}
+
+#vertalign{
+    display:flex;
+    flex-direction: column;
+}
+
+#popup_buttons{
+    display:flex;
+    justify-content: space-between;
+}
+
+#hide_page_button{
+    height:7vh;
+    width:7vh;
+    border-radius: 50%;
+    position: absolute;
+    position-anchor: --exit_anchor;
+    position-area: top right;
+    margin-bottom: -4.5vh;
+    margin-left: -4vh
+}
+
+
+#recheader{
+    font-size: 25px;
+    font-family: "Afacad";
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+
+#recpopup{
+    margin: 5vh;
+    background-color: #FEF8E5;
+    max-width: 50vh;
+    display: flex;
+    flex-direction: column;
+    anchor-name: --exit_anchor;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
+
+#recpopup img{
+    object-fit: cover;
+    height: 20vh;
+    width: 20vh;
+    margin-right: 5vh
+}
+
+

@@ -1,15 +1,201 @@
 body{
-    background-color:"588BE6";
+    background-color: #588BE6;
 }
+
+.page{
+    background-color: white;
+    border-radius: 15vh;
+    padding: 7vh;
+    margin: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Merge One"
+}
+
 img{
-    width:400px;
-    height: 400px;
+    width: 50vh;
+    height: 50vh;
+    object-fit: cover;
 }
 
 h1{
-    font-size: 72px
+    font-size: 72px;
+    font-family: "Afacad";
 }
 
 h4{
     margin-top: -50px;
+    font-family: "Merge One",
+    sans-serif;
+}
+
+
+#right-info{
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#site-break{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    margin-right: 5vw;
+    margin-left: 1vw;
+    font-family: "Afacad";
+}
+
+hr{
+    width: 50vw;
+    height: 3px;
+    border:none;
+    background-color: black;
+    margin-right: 5vw;
+}
+
+.section{
+    width: 40vw;
+
+}
+
+.specialtext{
+    font-family: "Afacad";
+    font-size: 20px;
+    margin-top: -0.5vh;
+}
+
+#timetable_box{
+    padding: 3vh;
+    border:0.5vh;
+    border-radius: 5vh;
+    background-color: #FEF8E5;
+    border-color: black; 
+}
+
+#timetable_body{
+    margin: 0.005vh;
+    padding: 1.5vh;
+    border: 0.5vh;
+    border-radius: 5vh;
+    background-color: #96A8C8;
+    border-color: black; 
+}
+
+.timetable_day{
+    padding: 0.5vh 1vh;
+    border: 0.2vh;
+    border-radius: 3vh;
+    background-color: #BFCDE0;
+    border-color: black; 
+    font-size: 12px;
+    margin: 1.5vh 0.1vh;
+}
+
+#comment_box{
+    padding: 1.5vh 1vh;
+    border: 0.2vh;
+    border-radius: 3vh;
+    background-color: #96A8C8;
+    border-color: black; 
+    font-size: 12px;
+    margin: 2vh 0.1vh;
+}
+
+#heading{
+    margin-bottom: 3vh
+}
+
+#description{
+    margin-top: 5vh;
+    border: 1vh;
+    padding: 3vh;
+    border-radius: 5vh;
+    background-color: #BFCDE0;
+    border-color: black; 
+    width: 50vh;
+}
+
+#comment{
+    margin: 2vh 1vh;
+    border: 1vh;
+    padding: 1.5vh 3vh;
+    border-radius: 5vh;
+    background-color: #BFCDE0;
+    border-color: black; 
+}
+
+#tag_box{
+    background-color: #BFCDE0;
+    border-radius: 10vh;
+    height: 7.5vh;
+    width: 50vh;
+    margin: 3vh 2vh;
+    display: flex;
+    flex-direction: row;
+    padding: 1.5vh 2vh;
+}
+
+#tag{
+    font-size: 12px;
+    background-color: #96A8C8;
+    border-radius: 5vh;
+    margin: 0.5vh 5vh;
+    padding: 1vh;
+    max-width: 17.5vh;
+    max-height: 12.5vh;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hover_text{
+    display: none;
+    font-size: 12px;
+    background-color: #FEF8E5;
+    outline: 0.2vh solid black;
+    outline-color: black;
+    margin: 0.5vh;
+    padding: 1vh;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0.5vh 0.5vh black;
+    position: absolute;
+    top: 10vh;
+    max-width: 25vh;
+    height: auto;
+    text-overflow: wrap;
+}
+
+#tag:hover .hover_text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#tag, .hover_text {    
+  margin-left: auto;    
+  margin-right: auto;  
+  width: fit-content;
+}
+
+.no_show_links{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+#comment_input{
+    background-color:#FEF8E5;
+    border-radius: 5vh;
+    outline: 0.2vh solid black;
+    outline-color: black;
+    height: 6vh;
+    font-size: 12px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding-left: 3vh;
 }
