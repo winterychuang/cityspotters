@@ -1,49 +1,49 @@
 const locations = {
-    ex1restaurant: {
-        name: "Example",
-        address: "xyz",
-        type: "Food and Drink",
-        //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
-            //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
-        //or
-        time: {
-            Monday: "9:00AM-6:00PM",
-            Tuesday: "9:00AM-6:00PM",
-            Wednesday:  "9:00AM-6:00PM",
-            Thursday: "9:00AM-6:00PM",
-            Friday: "9:00AM-6:00PM",
-            Saturday: "9:00AM-6:00PM",
-            Sunday: "9:00AM-6:00PM"
-        },
-        //level on scale of 1-2-3-4-5 (higher # = more expensive)
-        price: 2,
-        desc: "hello world! This is a test for descriptions. It should not be shown in the demo.",
-        //figure out links
-        link: "youtube.com",
-        //store picture
-        picture: ["images/infopage-placeholder.jpeg", "images/alpha_wolf.jpg"],
-        comments: {
-            c1:{
-                username: "X",
-                comment: "yay!", 
-                likes: 6
-            },
-            c2: {
-                username: "Y",
-                comment: "wow",
-                likes: 2
-            }
+    // ex1restaurant: {
+    //     name: "Example",
+    //     address: "xyz",
+    //     type: "Food and Drink",
+    //     //time: ["9:00-6:00","9:00-6:00","9:00-6:00",
+    //         //"9:00-6:00","9:00-6:00","9:00-6:00","9:00-6:00"],
+    //     //or
+    //     time: {
+    //         Monday: "9:00AM-6:00PM",
+    //         Tuesday: "9:00AM-6:00PM",
+    //         Wednesday:  "9:00AM-6:00PM",
+    //         Thursday: "9:00AM-6:00PM",
+    //         Friday: "9:00AM-6:00PM",
+    //         Saturday: "9:00AM-6:00PM",
+    //         Sunday: "9:00AM-6:00PM"
+    //     },
+    //     //level on scale of 1-2-3-4-5 (higher # = more expensive)
+    //     price: 2,
+    //     desc: "hello world! This is a test for descriptions. It should not be shown in the demo.",
+    //     //figure out links
+    //     link: "youtube.com",
+    //     //store picture
+    //     picture: ["images/infopage-placeholder.jpeg"],
+    //     comments: {
+    //         c1:{
+    //             username: "X",
+    //             comment: "yay!", 
+    //             likes: 6
+    //         },
+    //         c2: {
+    //             username: "Y",
+    //             comment: "wow",
+    //             likes: 2
+    //         }
 
-        },
-        tags: [
-            "Legacy Business", 
-            "In a Historically Underserved Neighborhood", 
-            "Close to Public Transit", 
-            "Women-owned",
-            "Free for All"
-        ]
+    //     },
+    //     tags: [
+    //         "Legacy Business", 
+    //         "In a Historically Underserved Neighborhood", 
+    //         "Close to Public Transit", 
+    //         "Women-owned",
+    //         "Free for All"
+    //     ]
         
-    },
+    // },
 
 
     tokyocream: {
@@ -68,7 +68,7 @@ const locations = {
         //figure out links
         link: "https://www.tokyocreamusa.com",
         //store picture
-        picture: ["images/infopage-placeholder.jpeg", "images/alpha_wolf.jpg"],
+        picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYX7en7xit11DV6mkGvpcyRlwPwZuYyp4fEb76I1d3oaKMzFeEuxaGD0g&s=10",
         comments: {
             c1:{
                 username: "X",
@@ -110,7 +110,7 @@ const locations = {
         //figure out links
         link: "https://www.lapromenadecafe.com",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3scuVn_2HfoIlt2e_ne-CTasjlui4386zoKdHWNw-mAZSDdWvzPU2i0Q&s=10",
         comments: {
             c1:{
                 username: "X",
@@ -153,7 +153,7 @@ const locations = {
         //figure out links
         link: "https://sfrecpark.org",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_uTJcOu6G0h4RbQemKzW4cL6mZJJx_p5-D6xcukNjahMzsLYA4pGDNGg-&s=10",
         comments: {
             c1:{
                 username: "X",
@@ -195,7 +195,7 @@ const locations = {
         //figure out links
         link: "https://sfrecpark.org",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/7/74/Balboa_Park_Playground_%284%29%2C_Balboa_Park%2C_San_Francisco_CA%2C_Jan_2021.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         comments: {
             c1:{
                 username: "X",
@@ -238,7 +238,7 @@ const locations = {
         //figure out links
         link: "https://sfrecpark.org",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://www.alltrails.com/mugen/image/location-app-router?url=https%3A%2F%2Fimages.alltrails.com%2FeyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMTI4Mjk2NzYwLzg2YjMzZTAxYmFjOWY4M2Y0NGMzZDMyODBlYWI4MjgxLmpwZyIsImVkaXRzIjp7InRvRm9ybWF0IjoianBlZyIsInJlc2l6ZSI6eyJ3aWR0aCI6MTA4MCwiaGVpZ2h0Ijo3MDAsImZpdCI6ImNvdmVyIn0sInJvdGF0ZSI6bnVsbCwianBlZyI6eyJ0cmVsbGlzUXVhbnRpc2F0aW9uIjp0cnVlLCJvdmVyc2hvb3REZXJpbmdpbmciOnRydWUsIm9wdGltaXNlU2NhbnMiOnRydWUsInF1YW50aXNhdGlvblRhYmxlIjozfX19&w=3840&q=75",
         comments: {
             c1:{
                 username: "X",
@@ -279,7 +279,7 @@ kirashop: {
         //figure out links
         link: "https://thekirashop.com",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyob7ajPvEdTQg16nLJ4a68KT8CFUUxHIEhmYD61EnT39Z03Hyv4oFhlU&s=10",
         comments: {
             c1:{
                 username: "X",
@@ -321,7 +321,7 @@ kirashop: {
         //figure out links
         link: "http://greenapplebooks.com/",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://s.hdnux.com/photos/01/55/62/27/28780008/3/ratio3x2_960.jpg",
         comments: {
             c1:{
                 username: "X",
@@ -365,7 +365,7 @@ kirashop: {
         link: "http://www.ucsf.edu/about/cgr/current-projects/mount-sutro-open-space-reserve",
         //store picture
           //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://www.alltrails.com/mugen/image/location-app-router?url=https%3A%2F%2Fimages.alltrails.com%2FeyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMTg3OTAzODQvNDY1ZjU4NDFhMGVlNTdmYWU2Mzk1ODBhNTYwMjEzZGUuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoiMTA4MCIsImhlaWdodCI6IjcwMCIsImZpdCI6ImNvdmVyIn0sInJvdGF0ZSI6bnVsbCwianBlZyI6eyJ0cmVsbGlzUXVhbnRpc2F0aW9uIjp0cnVlLCJvdmVyc2hvb3REZXJpbmdpbmciOnRydWUsIm9wdGltaXNlU2NhbnMiOnRydWUsInF1YW50aXNhdGlvblRhYmxlIjozfX19&w=3840&q=90",
         comments: {
             c1:{
                 username: "X",
@@ -405,7 +405,7 @@ kirashop: {
         //figure out links
         link: "https://loquatsf.com",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://freight.cargo.site/t/original/i/ebe24038c9d8cebe6a872464c4ef8bd8f9eeb438fc8ae028402996e9319be6c3/000029230021.jpeg",
         comments: {
             c1:{
                 username: "X",
@@ -446,7 +446,7 @@ kirashop: {
         //figure out links
         link: "https://hardwarecoffee.co/pages/west-portal",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrNnivCxSzvRMfTH7XctT8zRzK8UMt8hlxVBio_xi50nO9E6coEXIKxCE&s=10",
         comments: {
             c1:{
                 username: "X",
@@ -484,7 +484,7 @@ kirashop: {
         //figure out links
         link: "https://www.qspecialtycoffee.com",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://static.wixstatic.com/media/1cd3dc_cd910aa4b91b4ccab0ec7ef2cb3a3a71~mv2.jpg/v1/fill/w_718,h_480,fp_0.62_0.34,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Q%20Specialty%20Coffee-1.jpg",
         comments: {
             c1:{
                 username: "X",
@@ -526,7 +526,7 @@ kirashop: {
         //figure out links
         link: "https://sfrecpark.org/Facilities/Facility/Details/Buena-Vista-Park-155",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlYnUAxanS3emF3UNQcmYADmyxk4m0a-9NXwl7IQi20dlFimQrbmDftnA&s=10",
         comments: {
             c1:{
                 username: "X",
@@ -568,7 +568,7 @@ kirashop: {
         //figure out links
         link: "https://sfrecpark.org/Facilities/Facility/Details/Corona-Heights-Park-328",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/5/51/Corona_Heights_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         comments: {
             c1:{
                 username: "X",
@@ -611,7 +611,7 @@ kirashop: {
         //figure out links
         link: "https://fiftyfiftysf.square.site/",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbIMT8jVBwDtJQVyg6HZUYF41pqwfiqvp11-zXuwtL2Zz1iF_bBglfn59O&s=10",
         comments: {
             c1:{
                 username: "X",
@@ -654,7 +654,7 @@ kirashop: {
         //figure out links
         link: "https://sfrecpark.org/AgendaCenter/ViewFile/Item/48?fileID=8780",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://thumbs.dreamstime.com/b/people-were-initially-coming-to-san-francisco-slowly-early-s-out-growing-country-rest-world-then-231716965.jpg",
         comments: {
             c1:{
                 username: "X",
@@ -698,7 +698,7 @@ kirashop: {
         //figure out links
         link: "https://sfrecpark.org/facilities/facility/details/Jefferson-Square-343",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://sfrecpark.org/ImageRepository/Document?documentID=8083",
         comments: {
             c1:{
                 username: "X",
@@ -742,7 +742,7 @@ kirashop: {
         //figure out links
         link: "https://sfrecpark.org/facilities/facility/details/Jefferson-Square-343",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://s3-media0.fl.yelpcdn.com/bphoto/tvAMMxYffztzLA08Gq7oVQ/o.jpg",
         comments: {
             c1:{
                 username: "X",
@@ -786,7 +786,7 @@ kirashop: {
         //figure out links
         link: "https://www.simplepleasures-sf.com",
         //store picture
-        picture: "images/infopage-placeholder.jpeg",
+        picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMY9_gaOmLvBrKdfodUy-wc1qHLxg-5YfRJINrspLCFAjK0gdme0SvwCk&s=10",
         comments: {
             c1:{
                 username: "X",
